@@ -3,7 +3,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <Redirect href='/home' />
+    // <Redirect href='/home' />
+    <Redirect href='/tabs' />
     /*<SafeAreaView className=''>
       <View className='mt-6 mx-2.5'>
         <Text className='text-3xl font-work-black text-secondary-200'>Hola Mundo</Text>
