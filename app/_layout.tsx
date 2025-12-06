@@ -8,7 +8,7 @@ import "./global.css";
 
 SplashScreen.preventAutoHideAsync();
 
-const RootLAyout = () => {
+const RootLayout = () => {
   
   SystemUI.setBackgroundColorAsync('white');
 
@@ -33,4 +33,4 @@ const RootLAyout = () => {
   )
 }
 
-export default RootLAyout
+export default RootLayout

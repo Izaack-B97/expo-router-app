@@ -6,7 +6,6 @@ const _layout = () => {
     <Stack
         screenOptions={{
             animation: 'ios_from_left',
-            headerShown: false,
             contentStyle: {
                 backgroundColor: 'white'
             }
