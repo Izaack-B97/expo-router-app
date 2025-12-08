@@ -1,0 +1,38 @@
+import CustomDrawer from '@/presentation/components/share/CustomDrawer';
+import { Ionicons } from '@expo/vector-icons';
+import { Drawer } from 'expo-router/drawer';
+
+function DrawerLayout() {
+  return (
+    <Drawer
+      drawerContent={CustomDrawer}
+      screenOptions={{
+        overlayColor: 'rgba(0,0,0,0.5)',
+        drawerActiveTintColor: 'indigo',
+        headerShadowVisible: false, 
+        sceneStyle: {
+          backgroundColor: 'white'
+        }
+      }}
+    >
+      <Drawer.Screen
+        name='user/index'
+        options={{
+          drawerLabel: 'User',
+          title: 'User Info',
+          drawerIcon: ({ color, size }) => <Ionicons name='person-circle-outline' color={color} size={size} />
+        }}
+      />
+      <Drawer.Screen
+        name='schedule/index' // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: 'Schedule',
+          title: 'Schedule info',
+          drawerIcon: ({ color, size }) => <Ionicons name='calendar-outline' color={color} size={size} />
+        }}
+      />
+    </Drawer>
+  )
+}
+
+export default DrawerLayout
