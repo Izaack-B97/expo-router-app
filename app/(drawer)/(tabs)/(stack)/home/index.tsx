@@ -8,19 +8,19 @@ const HomeScreen = () => {
     <SafeAreaView>
       <View className='px-10'>
 
-        <CustomButton className='mt-2' color='primary' onPress={() => router.push('/tabs/(stack)/products')}>
+        <CustomButton className='mt-2' color='primary' onPress={() => router.push('/products')}>
           Products
         </CustomButton>
 
-        <CustomButton className='mt-2' color='secondary' onPress={() => router.push('/tabs/profile')}>
+        <CustomButton className='mt-2' color='secondary' onPress={() => router.push('/profile')}>
           Profile
         </CustomButton>
 
-        <CustomButton className='mt-2' color='tertiary' onPress={() => router.push('/tabs/settings')}>
+        <CustomButton className='mt-2' color='tertiary' onPress={() => router.push('/settings')}>
           Settings
         </CustomButton>
         
-        <Link href='/tabs/products' asChild>
+        <Link href='/products' asChild>
             <CustomButton variant='text-only' className='mt-2'>
               Products
             </CustomButton>

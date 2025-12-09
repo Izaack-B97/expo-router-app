@@ -1,7 +1,7 @@
-import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer'
+import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer'
 import { Text, View } from 'react-native'
 
-const CustomDrawer = ( props :  DrawerContentComponentPropp ) => {
+const CustomDrawer = ( props :  DrawerContentComponentProps ) => {
   return (
     <DrawerContentScrollView { ...props }>
         <View className='flex justify-center items-center mx-3 p-10 mb-10 h-[150px] rounded-xl bg-primary'>
